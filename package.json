@@ -1,0 +1,19 @@
+{
+  "name": "gfycat-client",
+  "version": "1.0.0",
+  "description": "Shitty gfycat client made with electron",
+  "main": "main.js",
+  "scripts": {
+    "test": "electron test",
+    "start": "electron ."
+  },
+  "keywords": [
+    "electron",
+    "gfycat"
+  ],
+  "author": "Michael Fryer (HumbleHominid)",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^2.0.5"
+  }
+}
