@@ -4,16 +4,26 @@
   "description": "Shitty gfycat client made with electron",
   "main": "main.js",
   "scripts": {
-    "test": "electron test",
-    "start": "electron ."
+    "start": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
   },
   "keywords": [
     "electron",
     "gfycat"
   ],
+  "build": {
+    "appId": "HumbleHominid",
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "createStartMenuShortcut": false
+    }
+  },
   "author": "Michael Fryer (HumbleHominid)",
   "license": "ISC",
   "devDependencies": {
-    "electron": "^2.0.5"
+    "electron": "^2.0.5",
+    "electron-builder": "^20.26.0"
   }
 }
