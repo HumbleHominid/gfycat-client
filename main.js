@@ -14,6 +14,9 @@ function createWindow() {
     // Open the DevTools.
     win.webContents.openDevTools();
 
+    // turn off the menu
+    win.setMenu(null);
+
     // Emitted when the window is closed.
     win.on('closed', () => {
         // Dereference the window object, usually you would store windows

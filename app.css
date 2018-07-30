@@ -1,0 +1,20 @@
+body {
+    display: grid;
+    grid-template-rows: [title] auto [article] auto 1fr [footer] auto;
+    margin: 0;
+    padding: 0 0.25em;
+    height: 100vh;
+}
+
+.page-title {
+    grid-row-start: title;
+}
+
+.page-article {
+    grid-row-start: article;
+}
+
+.page-footer {
+    grid-row-start: footer;
+    text-align: center;
+}
